@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Final Project</title>
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/careers.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <link href="https://fonts.googleapis.com/css?family=Lato:400,700&display=swap|Source+Sans+Pro:400,700&display=swap" rel="stylesheet">
+  <link rel="shortcut icon" href="images/favicon.png">
+  <script src="https://kit.fontawesome.com/01a1ba7926.js" crossorigin="anonymous"></script>
+  <script src="js/main.js"></script>
+</head>
+
+<body>
+  <div class="signup-popup">
+    <div class="signup-container">
+      <div class="signup-close-container">
+        <span id="signup-close-btn" onclick="closeSignup()">&#10005;</span>
+      </div>
+      <header class="signup-header">
+        <span class="big-emoji">🤖</span>
+        <span>Join Our Community</span>
+      </header>
+
+      <form class="signup-form" method="POST">
+        <p>
+          <label>User ID:</label>
+          <input type="text" name="user-id" placeholder="Alphabet, Number, At least 6" minlength="6" maxlength="20" pattern="[a-z0-9]{6,}" required>
+        </p>
+
+        <p>
+          <label>Password:</label>
+          <input type="password" name="user-password" placeholder="Alphabet, Number, Special Symbol, At least 8" minlength="8" maxlength="16" pattern="^(?=.*[A-Za-z])(?=.*\d)(?=.*[$@$!%*#?&])[A-Za-z\d$@$!%*#?&]{8,16}$" required>
+        </p>
+
+        <p>
+          <label>Name:</label>
+          <span class="multi-input">
+            <input type="text" name="user-firstname" placeholder="First Name" pattern="\w+">
+            <input type="text" name="user-lastname" placeholder="Last Name" pattern="\w+">
+          </span>
+        </p>
+
+        <p>
+          <label>Email Address:</label>
+          <input type="text" name="user-email" placeholder="Email" pattern="\w+@{1}\w+\.{1}\w+\.*\w*">
+        </p>
+
+        <input id="btn-signup" type="submit" value="Sign up">
+
+        <hr>
+        <br>
+        <p>
+          <label>Are you already a member?</label>
+          <input id="btn-signin" type="button" href="" value="Sign in">
+        </p>
+      </form>
+    </div>
+  </div>
+
+  <header>
+    <div class="header-title">
+      <a href="index.html">BCIT Computing Community</a>
+      <span id="header-signin-btn" onclick="openSignup()">Sign in / Sign up</span>
+    </div>
+    <nav>
+      <div class="mobile-menu">
+        <span id="mobile-open-btn" onclick="openMenu()">&#9776;</span>
+        <span id="mobile-close-btn" onclick="closeMenu()">&#10005;</span>
+      </div>
+      <ul class="mobile-nav">
+        <li>
+          <a class="mobile-nav-link" href="about.html">About</a>
+        </li>
+        <li>
+          <a class="mobile-nav-link" href="prospective.html">Prospective Students</a>
+        </li>
+        <li>
+          <a class="mobile-nav-link" href="campus-life.html">Campus Life</a>
+        </li>
+        <li>
+          <a class="mobile-nav-link" href="careers.html">Careers</a>
+        </li>
+      </ul>
+
+      <ul class="header-nav">
+        <li>
+          <a class="header-nav-link" href="about.html">About</a>
+        </li>
+        <li>
+          <a class="header-nav-link" href="prospective.html">Prospective Students</a>
+        </li>
+        <li>
+          <a class="header-nav-link" href="campus-life.html">Campus Life</a>
+        </li>
+        <li>
+          <a class="header-nav-link" href="careers.html">Careers</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Campus Life</h1>
+    <div class="post-bar">
+      <div class="post-search">
+        <label><i class="fas fa-search"></i></label>
+        <input type="text" name="post-searchbar" placeholder="Write keywords to search, and press ENTER" ></input>
+      </div>
+      <div class="post-write">
+        <i class="fas fa-pen-square"></i>
+      </div>
+    </div>
+    <hr>
+    <div class="post-list">
+      <h2>Post Title</h2>
+      <div class="post-content">
+        <div>
+          <span class="post-author">Author Name</span>
+          <span class="post-date">2019-12-02 10:03PM</span>
+        </div>
+        <div>
+          <span class="post-comment"><i class="fas fa-comment-dots"></i> 17 Comment</span>&emsp;
+          <span class="post-share"><i class="fas fa-share"></i> Share</span>
+        </div>
+      </div>
+    </div>
+    <div class="post-list">
+      <h2>Post Title</h2>
+      <div class="post-content">
+        <div>
+          <span class="post-author">Author Name</span>
+          <span class="post-date">2019-12-02 10:03PM</span>
+        </div>
+        <div>
+          <span class="post-comment"><i class="fas fa-comment-dots"></i> 17 Comment</span>&emsp;
+          <span class="post-share"><i class="fas fa-share"></i> Share</span>
+        </div>
+      </div>
+    </div><div class="post-list">
+      <h2>Post Title</h2>
+      <div class="post-content">
+        <div>
+          <span class="post-author">Author Name</span>
+          <span class="post-date">2019-12-02 10:03PM</span>
+        </div>
+        <div>
+          <span class="post-comment"><i class="fas fa-comment-dots"></i> 17 Comment</span>&emsp;
+          <span class="post-share"><i class="fas fa-share"></i> Share</span>
+        </div>
+      </div>
+    </div><div class="post-list">
+      <h2>Post Title</h2>
+      <div class="post-content">
+        <div>
+          <span class="post-author">Author Name</span>
+          <span class="post-date">2019-12-02 10:03PM</span>
+        </div>
+        <div>
+          <span class="post-comment"><i class="fas fa-comment-dots"></i> 17 Comment</span>&emsp;
+          <span class="post-share"><i class="fas fa-share"></i> Share</span>
+        </div>
+      </div>
+    </div><div class="post-list">
+      <h2>Post Title</h2>
+      <div class="post-content">
+        <div>
+          <span class="post-author">Author Name</span>
+          <span class="post-date">2019-12-02 10:03PM</span>
+        </div>
+        <div>
+          <span class="post-comment"><i class="fas fa-comment-dots"></i> 17 Comment</span>&emsp;
+          <span class="post-share"><i class="fas fa-share"></i> Share</span>
+        </div>
+      </div>
+    </div><div class="post-list">
+      <h2>Post Title</h2>
+      <div class="post-content">
+        <div>
+          <span class="post-author">Author Name</span>
+          <span class="post-date">2019-12-02 10:03PM</span>
+        </div>
+        <div>
+          <span class="post-comment"><i class="fas fa-comment-dots"></i> 17 Comment</span>&emsp;
+          <span class="post-share"><i class="fas fa-share"></i> Share</span>
+        </div>
+      </div>
+    </div>
+    <div class="post-list">
+      <h2>Post Title</h2>
+      <div class="post-content">
+        <div>
+          <span class="post-author">Author Name</span>
+          <span class="post-date">2019-12-02 10:03PM</span>
+        </div>
+        <div>
+          <span class="post-comment"><i class="fas fa-comment-dots"></i> 17 Comment</span>&emsp;
+          <span class="post-share"><i class="fas fa-share"></i> Share</span>
+        </div>
+      </div>
+    </div>
+    
+
+  </main>
+
+  <footer>
+    <div class="footer-container">
+      <nav>
+        <ul class="footer-nav">
+          <li>
+            <a class="footer-nav-link" href="about.html">About</a>
+          </li>
+          <li>
+            <a class="footer-nav-link" href="prospective.html">Prospective Students</a>
+          </li>
+          <li>
+            <a class="footer-nav-link" href="campus-life.html">Campus Life</a>
+          </li>
+          <li>
+            <a class="footer-nav-link" href="careers.html">Careers</a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="footer-info">
+        <div class="footer-contact">
+          <span>admin@bcitcc.dev,&emsp; &phone;(778)123-4567</span>
+        </div>
+        <span class="footer-copyrights">&copy;2019 BCIT Computing Community - All Rights Reserved.</span>
+      </div>
+    </div>
+  </footer>
+    
+</body>
+
+</html>

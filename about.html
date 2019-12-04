@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Final Project</title>
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/careers.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <link href="https://fonts.googleapis.com/css?family=Lato:400,700&display=swap|Source+Sans+Pro:400,700&display=swap" rel="stylesheet">
+  <link rel="shortcut icon" href="images/favicon.png">
+  <script src="https://kit.fontawesome.com/01a1ba7926.js" crossorigin="anonymous"></script>
+  <script src="js/main.js"></script>
+</head>
+
+<body>
+  <div class="signup-popup">
+    <div class="signup-container">
+      <div class="signup-close-container">
+        <span id="signup-close-btn" onclick="closeSignup()">&#10005;</span>
+      </div>
+      <header class="signup-header">
+        <span class="big-emoji">🤖</span>
+        <span>Join Our Community</span>
+      </header>
+
+      <form class="signup-form" method="POST">
+        <p>
+          <label>User ID:</label>
+          <input type="text" name="user-id" placeholder="Alphabet, Number, At least 6" minlength="6" maxlength="20" pattern="[a-z0-9]{6,}" required>
+        </p>
+
+        <p>
+          <label>Password:</label>
+          <input type="password" name="user-password" placeholder="Alphabet, Number, Special Symbol, At least 8" minlength="8" maxlength="16" pattern="^(?=.*[A-Za-z])(?=.*\d)(?=.*[$@$!%*#?&])[A-Za-z\d$@$!%*#?&]{8,16}$" required>
+        </p>
+
+        <p>
+          <label>Name:</label>
+          <span class="multi-input">
+            <input type="text" name="user-firstname" placeholder="First Name" pattern="\w+">
+            <input type="text" name="user-lastname" placeholder="Last Name" pattern="\w+">
+          </span>
+        </p>
+
+        <p>
+          <label>Email Address:</label>
+          <input type="text" name="user-email" placeholder="Email" pattern="\w+@{1}\w+\.{1}\w+\.*\w*">
+        </p>
+
+        <input id="btn-signup" type="submit" value="Sign up">
+
+        <hr>
+        <br>
+        <p>
+          <label>Are you already a member?</label>
+          <input id="btn-signin" type="button" href="" value="Sign in">
+        </p>
+      </form>
+    </div>
+  </div>
+
+  <header>
+    <div class="header-title">
+      <a href="index.html">BCIT Computing Community</a>
+      <span id="header-signin-btn" onclick="openSignup()">Sign in / Sign up</span>
+    </div>
+    <nav>
+      <div class="mobile-menu">
+        <span id="mobile-open-btn" onclick="openMenu()">&#9776;</span>
+        <span id="mobile-close-btn" onclick="closeMenu()">&#10005;</span>
+      </div>
+      <ul class="mobile-nav">
+        <li>
+          <a class="mobile-nav-link" href="about.html">About</a>
+        </li>
+        <li>
+          <a class="mobile-nav-link" href="prospective.html">Prospective Students</a>
+        </li>
+        <li>
+          <a class="mobile-nav-link" href="campus-life.html">Campus Life</a>
+        </li>
+        <li>
+          <a class="mobile-nav-link" href="careers.html">Careers</a>
+        </li>
+      </ul>
+
+      <ul class="header-nav">
+        <li>
+          <a class="header-nav-link" href="about.html">About</a>
+        </li>
+        <li>
+          <a class="header-nav-link" href="prospective.html">Prospective Students</a>
+        </li>
+        <li>
+          <a class="header-nav-link" href="campus-life.html">Campus Life</a>
+        </li>
+        <li>
+          <a class="header-nav-link" href="careers.html">Careers</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <div class="about-content">
+      <h1>Welcome to BCIT Computing Community!</h1>
+      <p>This community is to share information and study materials among BCIT Computing students. You can join us to access the numerous contents and to ask any help to peers!<br>
+      The contents might contain what school provided, and in this case, verified students only can access to them. You can verify your identity by providing a copy of student ID in your account setting.</p>
+    </div>
+    <div class="about-content">
+      <h2>Prospective Menu</h2>
+      <p>This menu is for prospective student who are interested in applying to BCIT Computing Programs.<br>
+      The tips are here, which were provided by current or formal student. Thus, information are unofficial, and might not accurate. All information is for the references. Please contact to the BCIT admission office for the official answers.</p>
+    </div>
+    <div class="about-content">
+      <h2>Campus-life Menu</h2>
+      <p>This menu is only for the current and graduate students. You can help each other and find tips about classes, personal projects, and making career path. Also, selling used textbooks are possible.</p>
+    </div>
+    <div class="about-content">
+      <h2>Careers Menu</h2>
+      <p>The job postings are categorized by cities.<br>
+      Some of data are automatically crawled from job sites and realated companies' sites (in this case, the sourse will be listed in the posting), and you can post one by your own as well. Please be aware of that this community does not have any benefits to post about jobs and also doesn't have any responsibilities about any issues caused by your personal contact with job providers.</p>
+    </div>
+    <hr>
+    <div class="about-content">
+      <p>
+        <span>If you need more details about programs, go to <a href="https://bcit.ca" class="text-inline-link">BCIT official web site</a>.</span>
+      </p>
+      <p>
+        <span><a href="https://learn.bcit.ca"class="text-inline-link">Learning Hub</a> is an online classroom for students.</span>
+      </p>
+      <p>
+        <span>To check your personal info, go to <a href="https://my.bcit.ca"class="text-inline-link">myBCIT</a></span>
+      </p>
+    </div>
+
+  </main>
+
+  <footer>
+    <div class="footer-container">
+      <nav>
+        <ul class="footer-nav">
+          <li>
+            <a class="footer-nav-link" href="about.html">About</a>
+          </li>
+          <li>
+            <a class="footer-nav-link" href="prospective.html">Prospective Students</a>
+          </li>
+          <li>
+            <a class="footer-nav-link" href="campus-life.html">Campus Life</a>
+          </li>
+          <li>
+            <a class="footer-nav-link" href="careers.html">Careers</a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="footer-info">
+        <div class="footer-contact">
+          <span>admin@bcitcc.dev,&emsp; &phone;(778)123-4567</span>
+        </div>
+        <span class="footer-copyrights">&copy;2019 BCIT Computing Community - All Rights Reserved.</span>
+      </div>
+    </div>
+  </footer>
+    
+</body>
+
+</html>

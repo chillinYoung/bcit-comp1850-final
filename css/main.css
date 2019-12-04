@@ -1,0 +1,415 @@
+:root {
+  --color-primary: #153E68;
+  --color-accent: #FFAB7A;
+  --color-grey: #CCCCCC;
+  --color-lightgrey: #F8F8F8;
+  --color-link: #246DB5;
+}
+
+html {
+  height: 100%;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100%;
+}
+
+header {}
+
+.header-title {
+  padding: 1.1rem 3.7rem .7rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.header-title a {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: var(--color-primary);
+}
+
+#header-signin-btn {
+  color: var(--color-primary);
+  padding: 5px 5px 5px 50px;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+#header-signin-btn:hover {
+  text-decoration: underline;
+}
+
+.signup-popup {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 100;
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+.signup-container {
+  background-color: white;
+  padding: 30px 45px 50px;
+  vertical-align: middle;
+  margin: auto;
+  width: 350px;
+}
+
+label {
+  display: block;
+  padding: 3px 0;
+}
+
+input {
+  background-color: var(--color-lightgrey);
+  font-size: 0.9rem;
+  width: 100%;
+  padding: 3px;
+  box-sizing: border-box;
+}
+
+.signup-close-container {
+  text-align: right;
+}
+
+#signup-close-btn {
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+.signup-header {
+  font-size: 1.7rem;
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 20px;
+}
+
+.big-emoji {
+  font-size: 3rem;
+}
+
+.signup-header div {
+    text-align: center;
+}
+
+.signup-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 7px;
+
+}
+
+.signup-form p {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 7px 0;
+}
+
+.multi-input {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.multi-input input {
+  box-sizing: border-box;
+  width: 49%;
+}
+
+#btn-signup {
+  background-color: var(--color-primary);
+  color: white;
+  display: block;
+  margin: 30px auto;
+  font-size: 1.1rem;
+  width: 50%;
+  vertical-align: middle;
+}
+
+#btn-signup:hover {
+  color: var(--color-accent);
+}
+
+#btn-signin {
+  background-color: var(--color-grey);
+  color: black;
+  display: block;
+  margin: 10px auto 10px;
+  font-size: 1.1rem;
+  width: 50%;
+  vertical-align: middle;
+  border-top: 1px solid var(--color-grey);
+}
+
+#btn-signin:hover {
+  background-color: var(--color-accent);
+}
+
+header nav{
+  background-color: var(--color-primary);
+  color: white;
+  font-size: 1.15rem;
+  padding: .8rem 3.7rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+.header-nav {
+  padding-inline-start: 0;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  list-style-type: none;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.header-nav-link {
+  padding-left: 2rem;
+  color: white;
+}
+
+.header-nav-link:hover {
+  color: var(--color-accent);
+}
+
+.mobile-menu,
+.mobile-nav {
+  display: none;
+}
+
+#mobile-open-btn {
+  font-size: 2.2rem;
+  cursor: pointer;
+}
+
+#mobile-close-btn {
+  font-size: 2.2rem;
+  cursor: pointer;
+  padding-right: 0.17rem;
+  display: none;
+}
+
+figure {
+  margin: 0;
+}
+
+figure img {
+  width: 100%;
+  height: 30rem;
+  object-fit: cover;
+}
+
+main {
+  margin: 4rem auto;
+  max-width: 1160px;
+}
+
+main p {
+  font-size: 1.2rem;
+}
+
+.post-bar {
+  padding: .5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.post-search {
+  border: 1px solid var(--color-grey);
+  border-radius: 10px;
+  padding: .3rem;
+  flex-grow: 1;
+  display: flex;
+  justify-content: space-between;
+}
+
+.post-search i {
+  padding: .3rem .5rem;
+  font-size: 1.2rem;
+}
+
+.post-search input {
+  flex-grow: 1;
+  border: none;
+  padding: .3rem .5rem;
+}
+
+.post-search input:focus {
+  outline: none;
+}
+
+.post-write {
+  padding: .3rem;
+  font-size: 3rem;
+  margin-left: 1rem;
+  cursor: pointer;
+}
+
+.post-write:hover {
+  color: var(--color-accent);
+}
+
+.about-content {
+  margin: 3rem 0;
+}
+
+.about-content p {
+  font-family: 'Lato', sans-serif;
+}
+
+.text-inline-link {
+  text-decoration: underline;
+  color: var(--color-link);
+}
+
+.text-inline-link:hover {
+  color: var(--color-accent);
+}
+
+.post-list {
+  border-bottom: 1px solid var(--color-grey);
+  padding: .7rem;
+}
+
+.post-list:hover {
+  background-color: var(--color-lightgrey);
+}
+
+.post-list h2 {
+  margin: 0;
+  padding: .3rem 0;
+  cursor: pointer;
+  font-size: 1.3rem;
+}
+
+.post-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.post-author {
+  font-weight: 500;
+}
+
+.post-date {
+
+}
+
+.post-comment {
+  cursor: pointer;
+}
+
+.post-share {
+  cursor: pointer;
+}
+
+.post-grid {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 1.5rem;
+}
+
+.post-grid-img {
+  width: 320px;
+  height: 200px;
+  object-fit: cover;
+}
+
+.post-grid-content {
+  border: 2px solid var(--color-grey);
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  cursor: pointer;
+  padding: 1rem;
+  box-sizing: border-box;
+  width: 356px;
+}
+
+.post-grid-content:hover {
+  border-color: var(--color-accent);
+}
+
+.post-grid-info h3 {
+  margin: .8rem 0;
+}
+
+.post-grid-info div {
+  margin: .2rem 0;
+}
+
+.post-grid-author {
+  font-weight: bold;
+}
+
+.post-grid-date {
+  padding-left: .3rem;
+}
+
+hr {
+  border: none;
+  border-bottom: 1px solid var(--color-grey);
+  margin: 0;
+  width: 100%;
+}
+
+footer {
+  background-color: var(--color-grey);
+  padding: 1.6rem 3.9rem 1.85rem;
+  display: block;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.footer-nav {
+  list-style-type: none;
+  display: flex;
+  padding-inline-start: 0;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  align-items: flex-start;
+  width: 100%;
+}
+
+.footer-nav li {
+  padding: 0 1.6rem;
+}
+
+.footer-nav-link {
+  color: var(--color-primary);
+  font-weight: bold;
+  font-size: 1.05rem;
+}
+
+.footer-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.footer-copyrights {
+  margin-top: 0.15rem;
+}
+

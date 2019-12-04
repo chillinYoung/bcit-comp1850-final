@@ -1,0 +1,43 @@
+.careers-title {
+  text-align: center;
+  width: 100%;
+}
+
+.careers-gallery {
+  display: flex;
+  min-height: 100%;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.careers-city {
+  margin: .9rem .6rem;
+  position: relative;
+}
+
+.careers-link:hover span {
+  background-color: rgba(12, 12, 12, 0.6);
+}
+
+.careers-link:hover img {
+  filter: brightness(105%);
+}
+
+.careers-city img {
+  width: 270px;
+  height: 160px;
+  object-fit: cover;
+  filter: brightness(70%);
+}
+
+.careers-city span {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  font-size: 1.4rem;
+  font-weight: bold;
+  margin: 0;
+  bottom: 9%;
+  left: 0;
+  color: white;
+}
