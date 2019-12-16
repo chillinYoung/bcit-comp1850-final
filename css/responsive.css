@@ -125,7 +125,7 @@
   }
 
   main {
-    max-width: 392px;
+    max-width: 320px;
   }
 
   figure img {
@@ -133,8 +133,8 @@
   }
 
   .careers-city img {
-    width: 380px;
-    height: 220px;
+    width: 300px;
+    height: 200px;
   }
 
   .post-grid {
@@ -143,12 +143,12 @@
   }
 
   .post-grid-img {
-    width: 360px;
-    height: 180px;
+    width: 288px;
+    height: 150px;
   }
 
   .post-grid-content {
-    width: 392px;
+    width: 320px;
     margin-bottom: 1rem;
   }
 
